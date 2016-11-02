@@ -5,11 +5,8 @@ using System.Text;
 
 namespace AnimalsRepo
 {
-
-    /// <summary>
-    /// Represent abstract representation of any animal.
-    /// </summary>
-    public abstract class Animal
+    public abstract class Vertebrate : Animal
     {
+        public const int CervicalVertebraeNumber = 7;
     }
 }

@@ -5,7 +5,8 @@ using System.Text;
 
 namespace AnimalsRepo
 {
-    public abstract class Mammal : Animal
+    public interface IBloodPompeable
     {
+        bool IsPumping { get; }
     }
 }

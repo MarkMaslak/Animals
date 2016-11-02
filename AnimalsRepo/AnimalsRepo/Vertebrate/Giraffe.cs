@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AnimalsRepo
+namespace AnimalsRepo.Vertebrate
 {
-
     /// <summary>
-    /// Represent abstract representation of any animal.
+    /// Marc's class.
     /// </summary>
-    public abstract class Animal
+    public class Giraffe : Mammal
     {
     }
 }

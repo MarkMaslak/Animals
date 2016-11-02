@@ -5,11 +5,10 @@ using System.Text;
 
 namespace AnimalsRepo
 {
-    public abstract class Heart
+    /// <summary>
+    /// Ivan's class.
+    /// </summary>
+    public class Bee : Insect
     {
-        public Heart()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
