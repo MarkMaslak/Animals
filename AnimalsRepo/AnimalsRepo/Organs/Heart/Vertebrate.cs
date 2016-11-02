@@ -7,7 +7,7 @@ namespace AnimalsRepo
 {
     public abstract partial class Vertebrate : Animal
     {
-        public const int CervicalVertebraeNumber = 7;
-        
+        public Heart Heart { get; set; }
+
     }
 }

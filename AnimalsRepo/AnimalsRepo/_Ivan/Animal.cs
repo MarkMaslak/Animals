@@ -9,7 +9,11 @@ namespace AnimalsRepo
     /// <summary>
     /// Represent abstract representation of any animal.
     /// </summary>
-    public abstract class Animal
+    public abstract partial class Animal
     {
+        /// <summary>
+        /// Describes if a animal is moving.
+        /// </summary>
+        bool InMovement { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AnimalsRepo.Vertebrate
+namespace AnimalsRepo
 {
     /// <summary>
     /// Marc's class.
