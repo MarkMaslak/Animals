@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AnimalsRepo
 {
+
     /// <summary>
     /// Represent abstract representation of any animal.
     /// </summary>
@@ -12,8 +13,8 @@ namespace AnimalsRepo
     {
 
         /// <summary>
-        /// Informs if blood pump is working.
+        /// Represents heart - internal organ.
         /// </summary>
-        public bool IsHeartWorking { get; set; }
+        public Heart Heart { get; set; }
     }
 }
