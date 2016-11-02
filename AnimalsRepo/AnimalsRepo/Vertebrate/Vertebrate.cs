@@ -7,6 +7,9 @@ namespace AnimalsRepo
 {
     public abstract partial class Vertebrate : Animal
     {
+        /// <summary>
+        /// Exclude: ...
+        /// </summary>
         public const int CervicalVertebraeNumber = 7;
         
     }

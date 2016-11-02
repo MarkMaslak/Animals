@@ -5,8 +5,8 @@ using System.Text;
 
 namespace AnimalsRepo
 {
-    public abstract class Mammal : Vertebrate
+    public class Head
     {
-        public Head Head { get; set; }
+        public Brain Brain { get; set; }
     }
 }

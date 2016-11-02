@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Organs\Brain.cs" />
+    <Compile Include="Organs\Head.cs" />
     <Compile Include="Organs\Heart\Vertebrate.cs" />
     <Compile Include="_Ivan\Animal.cs" />
     <Compile Include="_Marc\Animal.cs" />
