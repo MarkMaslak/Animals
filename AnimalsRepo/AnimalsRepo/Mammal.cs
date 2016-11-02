@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AnimalsRepo
 {
-    public abstract class AnimalBase
+    public abstract class Mammal : Animal
     {
     }
 }
