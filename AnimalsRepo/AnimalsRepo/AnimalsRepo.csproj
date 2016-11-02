@@ -55,8 +55,8 @@
     <Compile Include="Invertebrates\Insects\Insect.cs" />
     <Compile Include="Invertebrates\Invertebrate.cs" />
     <Compile Include="Organs\IBloodPompeable.cs" />
-    <Compile Include="Vertebrate\Giraffe.cs" />
-    <Compile Include="Vertebrate\Mammal.cs" />
+    <Compile Include="Vertebrate\Mammals\Giraffe.cs" />
+    <Compile Include="Vertebrate\Mammals\Mammal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vertebrate\Vertebrate.cs" />
