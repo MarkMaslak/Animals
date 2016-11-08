@@ -11,11 +11,39 @@ namespace AnimalsRepo
     /// </summary>
     public abstract partial class Animal
     {
+        /// <summary>
+        /// Describes if a animal is moving.
+        /// </summary>
+        bool InMovement { get; set; }
+        /// <summary>
+        /// Describes if a animal is feeded.
+        /// </summary>
+        bool IsFeeded { get; set; }
+
+
         public void OnMovement()
         {
             if (this.InMovement)
             {
+                Console.WriteLine("Animal is in movement");
 
+            }
+            else
+            {
+                Console.WriteLine("Animal is sleeping")
+            }
+        }
+
+        public void isFeeded()
+        {
+            if(this.isFeeded)
+            {
+                Console.WriteLine("Animal is feeded");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Animal is hungry")
             }
         }
     }
