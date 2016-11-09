@@ -7,6 +7,8 @@ public class Mouth
 {
 	public Mouth()
 	{
-        teeth teeth { get; set }
+        
     }
+
+    public Teeth Teeth { get; set; }
 }

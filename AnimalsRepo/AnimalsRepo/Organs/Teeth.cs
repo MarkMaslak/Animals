@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class teeth
+public class Teeth
 {
-	public teeth()
+	public Teeth()
 	{
 	}
 }

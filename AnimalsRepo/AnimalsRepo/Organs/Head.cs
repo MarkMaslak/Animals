@@ -9,6 +9,6 @@ namespace AnimalsRepo
     {
         public Brain Brain { get; set; }
         public Ears Ears{ get; set; }
-        public Mouth Mouth { get; set }
+        public Mouth Mouth { get; set; }
     }
 }
