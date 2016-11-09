@@ -9,8 +9,12 @@ namespace AnimalsRepo
     /// <summary>
     /// Marc's class.
     /// </summary>
-    public class Giraffe : Mammal
+    public class Giraffe : Mammals
     {
+        /// <summary>
+        /// Describes the length of the neck.
+        /// </summary>
+        float lengthNeck { get; set; }
         
     }
 }

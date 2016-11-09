@@ -9,7 +9,7 @@ namespace AnimalsRepo
     /// <summary>
     /// Represent abstract representation of any animal.
     /// </summary>
-    public abstract partial class Animal
+    public abstract partial class Animal : Health
     {
         /// <summary>
         /// Describes if a animal is moving.
@@ -19,6 +19,11 @@ namespace AnimalsRepo
         /// Describes if a animal is feeded.
         /// </summary>
         bool IsFeeded { get; set; }
+
+        /// <summary>
+        /// Describes the weight of animal.
+        /// </summary>
+        float weight { get; set; }
 
 
         public void OnMovement()
@@ -32,11 +37,11 @@ namespace AnimalsRepo
             {
                 Console.WriteLine("Animal is sleeping")
             }
-        }
+        };
 
         public void isFeeded()
         {
-            if(this.isFeeded)
+            if (this.isFeeded)
             {
                 Console.WriteLine("Animal is feeded");
                 return true;
@@ -45,6 +50,7 @@ namespace AnimalsRepo
             {
                 Console.WriteLine("Animal is hungry")
             }
-        }
+        };
     }
 }
+
