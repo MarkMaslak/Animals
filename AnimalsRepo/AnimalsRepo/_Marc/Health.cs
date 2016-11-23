@@ -29,10 +29,25 @@ namespace AnimalsRepo
 
 
 
+    class EventLeukocytes
+    {
+        public event EventHandler LeukocytesChanged;
 
+        protected virtual void OnLeukocytesChanged(EventArgs e)
+        {
+            EventHandler handler = LeukocytesChanged;
+            if (handler != null)
+            {
+                handler(this, e);
+                    //
+            }
+        }
+    }
 
-
-
+    static void c_LeukocytesChanged(object sender, EventArgs e)
+    {
+         Console.WriteLine("The Leukocytes was changed.");
+    }
 
         private double _leukocytesLevel;
 
@@ -41,24 +56,16 @@ namespace AnimalsRepo
             get { return _leukocytesLevel; }
             set
             {
-                if (value == _leukocytesLevel)
-                    return;
-
-                _leukocytesLevel = value;
-
-                var message = String.Format("{0} leukocytes level changed.", this.GetType().Name);
-                Debug.WriteLine(message);
+                EventLeukocytes e = new EventLeukocytes();
+                e.LeukocytesChanged += c_LeukocytesChanged;
                 
-                //this.LastMessage = message;
             }
+
         }
 
 
 #warning deber => hacer evento que informa sobre el estado que define que ha cambiado en ni.lec. y cual es su nivel acual
 #warning deber => a traves de EVENTOS hacer que el cerebro hace caminar
-
-
-
 
 
 
